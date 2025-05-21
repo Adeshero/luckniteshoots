@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckniteShoots - AI-Powered Encryption</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .hero {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 5rem 0;
+            margin-bottom: 2rem;
+        }
+        .feature-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #6a11cb;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            border: none;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #5a0cb0 0%, #1565e0 100%);
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="bi bi-shield-lock-fill me-2"></i>
+                LuckniteShoots
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/encrypt">Encrypt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/decrypt">Decrypt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">AI-Powered Encryption System</h1>
+            <p class="lead mb-5">Secure your data with state-of-the-art encryption enhanced by artificial intelligence</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="/encrypt" class="btn btn-light btn-lg px-4">Encrypt Files</a>
+                <a href="/decrypt" class="btn btn-outline-light btn-lg px-4">Decrypt Files</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <h2 class="text-center mb-5">Key Features</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card feature-card p-4">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <h3 class="card-title h4">AI-Enhanced Cryptanalysis</h3>
+                        <p class="card-text">Detect weaknesses in encryption using machine learning models trained to identify patterns and vulnerabilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card p-4">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-key-fill"></i>
+                        </div>
+                        <h3 class="card-title h4">AI-Powered Key Generation</h3>
+                        <p class="card-text">Generate cryptographically secure keys using reinforcement learning to optimize entropy and randomness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card p-4">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3 class="card-title h4">Data Integrity Verification</h3>
+                        <p class="card-text">Ensure your encrypted data hasn't been tampered with using AI-based integrity checks and HMAC verification.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card p-4">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
+                        <h3 class="card-title h4">Optimized Encryption</h3>
+                        <p class="card-text">Automatically select the best encryption method (AES, RSA, ECC) based on your data characteristics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card p-4">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-file-earmark-text"></i>
+                        </div>
+                        <h3 class="card-title h4">AI-Generated Reports</h3>
+                        <p class="card-text">Get detailed security reports with visualizations of encryption strength and entropy analysis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card p-4">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h3 class="card-title h4">Quantum-Resistant</h3>
+                        <p class="card-text">Prepare for the future with quantum-resistant encryption methods and key exchange mechanisms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">How It Works</h2>
+                <p class="lead">Our AI-powered encryption system combines traditional cryptographic methods with cutting-edge machine learning to provide the highest level of security.</p>
+                <ol class="mt-4">
+                    <li class="mb-3"><strong>Upload your file</strong> - Choose the file you want to encrypt</li>
+                    <li class="mb-3"><strong>AI analysis</strong> - Our system analyzes your data to determine the optimal encryption method</li>
+                    <li class="mb-3"><strong>Secure encryption</strong> - Your file is encrypted using the selected method with AI-generated keys</li>
+                    <li class="mb-3"><strong>Integrity verification</strong> - HMAC and AI-based integrity checks ensure your data hasn't been tampered with</li>
+                    <li class="mb-3"><strong>Detailed report</strong> - Receive a comprehensive security report with visualizations</li>
+                </ol>
+                <a href="/encrypt" class="btn btn-primary mt-3">Try It Now</a>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" alt="How it works" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>LuckniteShoots</h5>
+                    <p>AI-Powered Encryption System</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2023 LuckniteShoots. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
